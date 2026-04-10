@@ -1,22 +1,18 @@
 import java.util.Scanner;
 
-// Abstract Class
 abstract class Shape {
 
     protected double dim1;
     protected double dim2;
 
-    // Constructor
     public Shape(double dim1, double dim2) {
         this.dim1 = dim1;
         this.dim2 = dim2;
     }
 
-    // Abstract Method
     abstract double area();
 }
 
-// Rectangle Class
 class Rectangle extends Shape {
 
     public Rectangle(double length, double breadth) {
@@ -29,7 +25,6 @@ class Rectangle extends Shape {
     }
 }
 
-// Triangle Class
 class Triangle extends Shape {
 
     public Triangle(double base, double height) {
@@ -42,7 +37,6 @@ class Triangle extends Shape {
     }
 }
 
-// Test Class
 public class ShapeTest {
 
     public static void main(String[] args) {
