@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-// Base Class
 class Employee1 {
 
     protected String name;
@@ -16,7 +15,7 @@ class Employee1 {
     }
 
     public double calculateBonus() {
-        return salary * 0.10;  // Default 10% bonus
+        return salary * 0.10;  
     }
 
     public void generatePerformanceReport() {
@@ -31,7 +30,6 @@ class Employee1 {
     }
 }
 
-// Manager Class
 class Manager extends Employee1 {
 
     public Manager(String name, String address, double salary) {
@@ -40,7 +38,7 @@ class Manager extends Employee1 {
 
     @Override
     public double calculateBonus() {
-        return salary * 0.20;  // 20% bonus
+        return salary * 0.20;  
     }
 
     @Override
@@ -49,7 +47,6 @@ class Manager extends Employee1 {
     }
 }
 
-// Developer Class
 class Developer extends Employee1 {
 
     public Developer(String name, String address, double salary) {
@@ -58,7 +55,7 @@ class Developer extends Employee1 {
 
     @Override
     public double calculateBonus() {
-        return salary * 0.15;  // 15% bonus
+        return salary * 0.15;  
     }
 
     @Override
@@ -67,7 +64,6 @@ class Developer extends Employee1 {
     }
 }
 
-// Programmer Class
 class Programmer extends Employee1 {
 
     public Programmer(String name, String address, double salary) {
@@ -76,7 +72,7 @@ class Programmer extends Employee1 {
 
     @Override
     public double calculateBonus() {
-        return salary * 0.12;  // 12% bonus
+        return salary * 0.12;  
     }
 
     @Override
