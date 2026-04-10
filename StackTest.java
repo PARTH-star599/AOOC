@@ -1,9 +1,8 @@
 import java.util.Scanner;
 
-// Interface
 interface Stack {
 
-    int size = 5;  // default public static final
+    int size = 5;  
 
     void push(int data);
     void pop();
@@ -12,13 +11,11 @@ interface Stack {
     void underflow();
 }
 
-// Implementing Class
 class IntegerStack implements Stack {
 
     int[] arr = new int[size];
     int top = -1;
 
-    // Push Operation
     public void push(int data) {
         if (top == size - 1) {
             overflow();
@@ -28,7 +25,6 @@ class IntegerStack implements Stack {
         }
     }
 
-    // Pop Operation
     public void pop() {
         if (top == -1) {
             underflow();
@@ -37,7 +33,6 @@ class IntegerStack implements Stack {
         }
     }
 
-    // Display Stack
     public void display() {
         if (top == -1) {
             System.out.println("Stack is Empty");
@@ -49,18 +44,15 @@ class IntegerStack implements Stack {
         }
     }
 
-    // Overflow Method
     public void overflow() {
         System.out.println("Stack Overflow! Cannot push element.");
     }
 
-    // Underflow Method
     public void underflow() {
         System.out.println("Stack Underflow! Cannot pop element.");
     }
 }
 
-// Test Class
 public class StackTest {
 
     public static void main(String[] args) {
