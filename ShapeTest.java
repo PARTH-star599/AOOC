@@ -1,11 +1,9 @@
 import java.util.Scanner;
 
-// Interface
 interface Shape {
-    double area();   // abstract method
+    double area(); 
 }
 
-// Rectangle Class
 class Rectangle implements Shape {
 
     double length, breadth;
@@ -20,7 +18,6 @@ class Rectangle implements Shape {
     }
 }
 
-// Triangle Class
 class Triangle implements Shape {
 
     double base, height;
@@ -35,7 +32,6 @@ class Triangle implements Shape {
     }
 }
 
-// Test Class
 public class ShapeTest {
 
     public static void main(String[] args) {
