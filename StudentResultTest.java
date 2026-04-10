@@ -1,6 +1,4 @@
-        import java.util.Scanner;
-
-// Base Class
+import java.util.Scanner;
 class Student {
     protected int rollNo;
 
@@ -13,7 +11,6 @@ class Student {
     }
 }
 
-// Derived Class
 class Test extends Student {
     protected int sub1, sub2;
 
@@ -28,13 +25,11 @@ class Test extends Student {
     }
 }
 
-// Interface
 interface Sports {
-    int sMarks = 0;   // default public static final
+    int sMarks = 0;   
     void setSportsMarks(int sMarks);
 }
 
-// Final Derived Class
 class Result extends Test implements Sports {
 
     private int sportsMarks;
@@ -55,7 +50,6 @@ class Result extends Test implements Sports {
     }
 }
 
-// Test Application
 public class StudentResultTest {
 
     public static void main(String[] args) {
