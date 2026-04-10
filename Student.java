@@ -1,4 +1,4 @@
-// Parent class
+
 class Student {
     int roll_no;
 
@@ -11,7 +11,6 @@ class Student {
     }
 }
 
-// Child class of Student
 class Test extends Student {
     int sub1, sub2;
 
@@ -26,7 +25,6 @@ class Test extends Student {
     }
 }
 
-// Child class of Test (Multilevel Inheritance)
 class Result extends Test {
 
     void displayResult() {
@@ -40,7 +38,6 @@ class Result extends Test {
     }
 }
 
-// Main class
 public class Main {
     public static void main(String[] args) {
         Result obj = new Result();
